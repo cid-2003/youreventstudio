@@ -1,0 +1,39 @@
+
+
+
+/* navigation */
+/* .navbar-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-menu a {
+    color: var(--noir);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-top: 1.5rem;
+    line-height: 1;
+    transition: background-color 0.3s;
+    background-color: var(--jaune);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */
+
+/* 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--blanc);
+    padding: 10px;
+    color: var(--noir);
+    position: fixed;
+    width: 100%;
+    box-shadow: 5px 5px 5px var(--jaune);
+    background: linear-gradient(90des, #FFD700, #F2A900);
+    backdrop-filter: blur(6px);
+    
+} */
