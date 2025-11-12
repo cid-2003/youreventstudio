@@ -1,251 +1,553 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Your Event Studio</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
     <!-- Inclure Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
-    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/mediaqueries.css">
-</head>
-<body>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
     <header class="header">
-        <div class="nav-section">
-            <div class="brand-and-navBtn">
-                <span class="brand-name">
-                    <img src="index/logo.png" alt="">
-                </span>
-                <span class="navBtn flex">
-                    <i class="fa fa-bars" aria-hidden="true"></i>
-                </span>
-            </div>
+      <div class="nav-section">
+        <div class="nav-container">
+          <div class="brand-and-navBtn">
+            <span class="brand-name">
+              <img
+                src="index/logo.png"
+                alt="Your Event Studio Logo"
+                style="width: 150px; height: 60px"
+              />
+            </span>
+            <span class="navBtn flex">
+              <i class="fa fa-bars" aria-hidden="true"></i>
+            </span>
+          </div>
 
-            <nav class="top-nav">
-                <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+          <a href="tel:+22901123456 78" class="phone-number">
+            <i class="fas fa-phone-alt"></i>
+            <span>+229 12 34 56 78</span>
+          </a>
+
+          <nav class="top-nav">
+            <ul>
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
         </div>
+      </div>
+      <!-- Hero Section Amélioré -->
+      <div class="header">
+        <!-- Couches parallax -->
+        <div class="parallax-bg" id="parallaxBg"></div>
+        <div class="parallax-overlay"></div>
 
+        <!-- Éléments décoratifs -->
+        <div class="parallax-element parallax-element-1" id="element1"></div>
+        <div class="parallax-element parallax-element-2" id="element2"></div>
+        <div class="parallax-element parallax-element-3" id="element3"></div>
+
+        <!-- Particules flottantes -->
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+
+        <!-- Contenu -->
         <div class="container about">
-            <div class="about-content">
-                <h2>Bienvenue chez <span>Your Event Studio</span></h2>
-                <blockquote>
-                    " Nous sommes une équipe de photographes professionnels passionnés
-                    par notre métier et dévoués à capturer vos moments spéciaux de
-                    manière authentique et mémorable. Que ce soit pour un mariage
-                    romantique, un anniversaire joyeux, une grossesse pleine de
-                    promesses ou toute autre occasion importante de votre vie, nous
-                    mettons tout en œuvre pour vous offrir des souvenirs que vous
-                    chérirez pour toujours. N'hésitez pas à parcourir notre galerie et
-                    à nous contacter pour discuter de votre prochain événement ! "
-                    <small class="message">Photographie Production Vidéo Live Streaming
-                    </small>
-                </blockquote>
-            </div>
+          <div class="about-content">
+            <h2>Bienvenue chez <span>Your Event Studio</span></h2>
+            <blockquote>
+              Nous capturons l'essence de vos moments précieux avec passion et
+              authenticité. Mariages, anniversaires, naissances... chaque
+              événement devient une œuvre visuelle unique que vous chérirez pour
+              toujours.
+              <small class="message"
+                >Photographie | Production Vidéo | Live Streaming</small
+              >
+            </blockquote>
+          </div>
         </div>
+
+        <!-- Indicateur de scroll -->
+        <div class="scroll-indicator">
+          <span>Découvrir</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </div>
     </header>
 
     <section class="section-one">
-        <div class="container">
-            <div class="sec-one-left">
-                <!-- image -->
-                <div>
-                    <h3>Lorem ipsum sit amet</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-                        temporibus fugiat illo consequatur placeat? Similique illo at
-                        praesentium repellat perspiciatis amet molestiae aliquid, illum
-                        aperiam eveniet ut aut voluptate nostrum.
-                    </p>
-                    <a href="gallery.html" class="btn">Voir Plus</a>
-                </div>
-            </div>
-
-            <div class="sec-one-right">
-                <div class="work-content">
-                    <h3>INCROYABLE EQUIPE DE PHOTOGRAPHE</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus id
-                        iste vel laboriosam eius dicta animi dolore ratione, sint
-                        distinctio. Provident corrupti tenetur commodi at alias
-                        perferendis. Debitis, fuga quas!
-                    </p>
-                    <a href="gallery.html" class="btn">Voir Plus</a>
-                </div>
-
-                <div class="work-imgs">
-                    <div class="work-img-1">
-                        <!-- image -->
-                    </div>
-                    <div class="work-img-2">
-                        <!-- image -->
-                    </div>
-                </div>
-                <h3>"Lorem ipsum dolor, sit amet consectetur adipisicing elit."</h3>
-            </div>
+      <div class="container">
+        <!-- En-tête -->
+        <div class="section-header">
+          <h2>Nos <span>Services</span></h2>
+          <p>
+            Capturez l'essence de vos moments précieux avec nos services
+            professionnels
+          </p>
         </div>
+
+        <!-- Grande image gauche -->
+        <div class="sec-one-left">
+          <div>
+            <h3>Capturez Vos Moments Magiques</h3>
+            <p>
+              Chaque instant mérite d'être immortalisé avec passion et
+              professionnalisme. Notre équipe de photographes expérimentés
+              transforme vos événements en souvenirs inoubliables qui
+              traverseront le temps.
+            </p>
+            <a href="gallery.html" class="btn">Voir Plus</a>
+          </div>
+        </div>
+
+        <!-- Partie droite -->
+        <div class="sec-one-right">
+          <div class="work-content">
+            <h3>INCROYABLE ÉQUIPE DE PHOTOGRAPHES</h3>
+            <p>
+              Avec plus de 10 ans d'expérience, notre équipe passionnée maîtrise
+              l'art de capturer l'émotion authentique de chaque événement. De la
+              planification à la livraison finale, nous vous accompagnons pour
+              créer des souvenirs exceptionnels.
+            </p>
+            <a href="gallery.html" class="btn">Découvrir Notre Travail</a>
+          </div>
+
+          <!-- Grid 4 cartes services -->
+          <div class="work-imgs">
+            <!-- Carte 1: Mariages -->
+            <div class="service-card work-img-1">
+              <span class="card-badge">Populaire</span>
+              <div class="card-content">
+                <div class="card-icon">
+                  <i class="fas fa-rings-wedding"></i>
+                </div>
+                <h4>Mariages</h4>
+                <p>
+                  Immortalisez le plus beau jour de votre vie avec élégance et
+                  authenticité.
+                </p>
+                <a href="#" class="card-link">
+                  En savoir plus <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Carte 2: Anniversaires -->
+            <div class="service-card work-img-2">
+              <div class="card-content">
+                <div class="card-icon">
+                  <i class="fas fa-birthday-cake"></i>
+                </div>
+                <h4>Anniversaires</h4>
+                <p>
+                  Célébrez chaque année avec des souvenirs joyeux et colorés qui
+                  durent toujours.
+                </p>
+                <a href="#" class="card-link">
+                  En savoir plus <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Carte 3: Événements -->
+            <div class="service-card work-img-3">
+              <div class="card-content">
+                <div class="card-icon">
+                  <i class="fas fa-champagne-glasses"></i>
+                </div>
+                <h4>Événements</h4>
+                <p>
+                  Concerts, festivals, soirées privées... Capturez l'ambiance
+                  unique de vos événements.
+                </p>
+                <a href="#" class="card-link">
+                  En savoir plus <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Carte 4: Corporate -->
+            <div class="service-card work-img-4">
+              <span class="card-badge">Pro</span>
+              <div class="card-content">
+                <div class="card-icon">
+                  <i class="fas fa-briefcase"></i>
+                </div>
+                <h4>Corporate</h4>
+                <p>
+                  Conférences, séminaires, team building... Professionnalisme et
+                  qualité garantis.
+                </p>
+                <a href="#" class="card-link">
+                  En savoir plus <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <h3>
+            "Des moments capturés avec passion, des souvenirs créés pour
+            l'éternité."
+          </h3>
+        </div>
+      </div>
     </section>
 
     <section class="section-two">
-        <div class="container">
-            <div class="insta-imgs">
-                <div>
-                    <img src="photo/voirplus1.jpg" alt="" />
-                    <div class="icon-overflow flex">
-                        <a href="gallery.html" class="btn">Voir Plus</a>
-                    </div>
-                </div>
-                <div>
-                    <img src="photo/voirplus.jpg" alt="" />
-                    <div class="icon-overflow flex">
-                        <a href="gallery.html" class="btn">Voir Plus</a>
-                    </div>
-                </div>
-
-                <div>
-                    <img src="photo/voirplus5.jpg" alt="" />
-                    <div class="icon-overflow flex">
-                        <a href="gallery.html" class="btn">Voir Plus</a>
-                    </div>
-                </div>
-
-                <div>
-                    <img src="photo/voirplus6.jpg" alt="" />
-                    <div class="icon-overflow flex">
-                        <a href="gallery.html" class="btn">Voir Plus</a>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <!-- En-tête -->
+        <div class="section-header">
+          <h2>Notre <span>Galerie</span></h2>
+          <p class="subtitle">
+            Découvrez une sélection de nos plus beaux moments capturés
+          </p>
         </div>
-    </section>
 
-    <!-- contact -->
-    <section class="section-five" id="contact">
-        <div class="container">
-            <div class="contact-top">
-                <h3>CONTACTEZ NOUS</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur sed facilis error, voluptates
-                    quisquam pariatur quod, alias veniam aliquid quis repudiandae dignissimos officia minus maiores,
-                    quibusdam sequi! Ullam, vero autem.</p>
+        <!-- Galerie Bento Box -->
+        <div class="insta-imgs">
+          <!-- Image 1 - Grande -->
+          <div>
+            <span class="category-badge">Mariage</span>
+            <img
+              src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=2070"
+              alt="Mariage romantique"
+            />
+            <div class="icon-overflow">
+              <i class="fas fa-camera camera-icon"></i>
+              <div class="overlay-info">
+                <h4>Mariage Romantique</h4>
+                <p>Paris, France • 2024</p>
+              </div>
+              <a href="gallery.html" class="btn">
+                Voir Plus <i class="fas fa-arrow-right"></i>
+              </a>
             </div>
+          </div>
 
-            <div class="contact-middle">
-                <div>
-                    <span class="contact-icon">
-                        <i class="fa fa-map-signs" aria-hidden="true"></i>
-                    </span>
-                    <span>Address</span>
-                    <p>Bénin, Cotonou</p>
-                </div>
-
-                <div>
-                    <span class="contact-icon">
-                        <i class="fa fa-phone" aria-hidden="true"></i>
-                    </span>
-                    <span>Contact</span>
-                    <p>+229 43 19 92 51</p>
-                </div>
-
-                <div>
-                    <span class="contact-icon">
-                        <i class="fa fa-paper-plane" aria-hidden="true"></i>
-                    </span>
-                    <span>Address Email</span>
-                    <p>youreventstudio229@gmail.com</p>
-                </div>
-
-                <div>
-                    <span class="contact-icon">
-                        <i class="fa fa-globe" aria-hidden="true"></i>
-                    </span>
-                    <span>Site Web</span>
-                    <p>www.youreventstudio229.com</p>
-                </div>
+          <!-- Image 2 -->
+          <div>
+            <span class="category-badge">Anniversaire</span>
+            <img
+              src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?q=80&w=2070"
+              alt="Anniversaire festif"
+            />
+            <div class="icon-overflow">
+              <i class="fas fa-birthday-cake camera-icon"></i>
+              <div class="overlay-info">
+                <h4>Anniversaire Joyeux</h4>
+                <p>Cotonou • 2024</p>
+              </div>
+              <a href="gallery.html" class="btn">
+                Voir Plus <i class="fas fa-arrow-right"></i>
+              </a>
             </div>
-            <!-- <div class="contact-bottom"> -->
-                <a href="" class="btn social-btn">Laissez nous un message</a>
-            <!-- <form action="send_mail.html" method="post" class="form">
-    <input type="text" id="name" name="name" placeholder="Votre Nom" required>
-    <input type="email" id="email" name="email" placeholder="Votre Email" required>
-    <input type="text" id="sujet" name="sujet" placeholder="Sujet" required>
-    <textarea name="message" id="message" rows="9" placeholder="Message" required></textarea>
-    <input type="submit" class="btn" value="Envoyer">
-</form> -->
+          </div>
 
-                <!-- Maps -->
+          <!-- Image 3 -->
+          <div>
+            <span class="category-badge">Corporate</span>
+            <img
+              src="https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=2069"
+              alt="Événement corporate"
+            />
+            <div class="icon-overflow">
+              <i class="fas fa-briefcase camera-icon"></i>
+              <div class="overlay-info">
+                <h4>Conférence Tech</h4>
+                <p>Porto-Novo • 2024</p>
+              </div>
+              <a href="gallery.html" class="btn">
+                Voir Plus <i class="fas fa-arrow-right"></i>
+              </a>
             </div>
+          </div>
+
+          <!-- Image 4 -->
+          <div>
+            <span class="category-badge">Événement</span>
+            <img
+              src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=2070"
+              alt="Concert live"
+            />
+            <div class="icon-overflow">
+              <i class="fas fa-music camera-icon"></i>
+              <div class="overlay-info">
+                <h4>Festival Musique</h4>
+                <p>Abomey-Calavi • 2024</p>
+              </div>
+              <a href="gallery.html" class="btn">
+                Voir Plus <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Image 5 -->
+          <div>
+            <span class="category-badge">Mariage</span>
+            <img
+              src="https://images.unsplash.com/photo-1606800052052-a08af7148866?q=80&w=2070"
+              alt="Couple mariage"
+            />
+            <div class="icon-overflow">
+              <i class="fas fa-heart camera-icon"></i>
+              <div class="overlay-info">
+                <h4>Cérémonie Élégante</h4>
+                <p>Ouidah • 2024</p>
+              </div>
+              <a href="gallery.html" class="btn">
+                Voir Plus <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Image 6 -->
+          <div>
+            <span class="category-badge">Portrait</span>
+            <img
+              src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=2064"
+              alt="Portrait professionnel"
+            />
+            <div class="icon-overflow">
+              <i class="fas fa-user camera-icon"></i>
+              <div class="overlay-info">
+                <h4>Portrait Studio</h4>
+                <p>Cotonou • 2024</p>
+              </div>
+              <a href="gallery.html" class="btn">
+                Voir Plus <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Image 7 -->
+          <div>
+            <span class="category-badge">Famille</span>
+            <img
+              src="https://images.unsplash.com/photo-1511895426328-dc8714191300?q=80&w=2070"
+              alt="Famille heureuse"
+            />
+            <div class="icon-overflow">
+              <i class="fas fa-users camera-icon"></i>
+              <div class="overlay-info">
+                <h4>Moments en Famille</h4>
+                <p>Parakou • 2024</p>
+              </div>
+              <a href="gallery.html" class="btn">
+                Voir Plus <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Image 8 - Grande -->
+          <div>
+            <span class="category-badge">Événement</span>
+            <img
+              src="https://images.unsplash.com/photo-1464047736614-af63643285bf?q=80&w=2070"
+              alt="Gala de soirée"
+            />
+            <div class="icon-overflow">
+              <i class="fas fa-champagne-glasses camera-icon"></i>
+              <div class="overlay-info">
+                <h4>Gala de Prestige</h4>
+                <p>Cotonou • 2024</p>
+              </div>
+              <a href="gallery.html" class="btn">
+                Voir Plus <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <footer class="footer-distributed">
-        <div class="footer-left">
-            <h3>Your Event Studio</h3>
+      <div class="footer-container">
+        <!-- Column 1: About -->
+        <div class="footer-column">
+          <div class="footer-logo">Your Event Studio</div>
+          <p class="footer-description">
+            Créateur d'expériences inoubliables. Nous transformons vos rêves en
+            réalité à travers des événements exceptionnels.
+          </p>
+          <div class="social-icons">
+            <a
+              href="https://www.facebook.com/profile.html?id=61554914385517"
+              target="_blank"
+              aria-label="Facebook"
+            >
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/your_event_studio229"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.youtube.com"
+              target="_blank"
+              aria-label="YouTube"
+            >
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a
+              href="https://www.whatsapp.com"
+              target="_blank"
+              aria-label="WhatsApp"
+            >
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
 
-            <p class="footer-links">
-                <a href="index.html" class="active">Home</a>
-                |
-                <a href="gallery.html">Gallery</a>
-                |
-                <a href="blog.html">Blog</a>
-                |
-                <a href="#contact">Contact</a>
+        <!-- Column 2: Quick Links -->
+        <div class="footer-column">
+          <h3>Navigation</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="gallery.html">Galerie</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Services -->
+        <div class="footer-column">
+          <h3>Services</h3>
+          <ul class="footer-links">
+            <li><a href="#">Mariages</a></li>
+            <li><a href="#">Événements</a></li>
+            <li><a href="#">Photographie</a></li>
+            <li><a href="#">Vidéographie</a></li>
+            <li><a href="#">Décoration</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact -->
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>Cotonou, Bénin</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <p><a href="tel:+22912345678">+229 01 12 34 56 78</a></p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <p>
+              <a href="mailto:youreventstudio299@gmail.com"
+                >youreventstudio299@gmail.com</a
+              >
             </p>
-
-            <p class="footer-company-name">Copyright © 2024 <strong>Your Event Studio229</strong></p>
+          </div>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Newsletter" required />
+            <button type="submit">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
         </div>
+      </div>
 
-        <div class="footer-center">
-            <div>
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <p><span>Uinioznevin</span></p>
-            </div>
-
-            <div>
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                <p>Uinioznevin</p>
-            </div>
-
-            <div>
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <p><a href="#">youreventstudio299@gmailcom</a></p>
-            </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; 2024 <strong>Your Event Studio229</strong>. Tous droits
+          réservés.
+        </p>
+        <div class="footer-bottom-links">
+          <a href="#privacy">Confidentialité</a>
+          <a href="#terms">Conditions</a>
+          <a href="#sitemap">Plan du Site</a>
         </div>
-
-        <div class="footer-right">
-            <p class="footer-company-about">
-                <span>Que savoir sur nous?</span>
-                <strong>Your Event Studio</strong>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint,
-                aliquam! Modi culpa tempore soluta voluptatem, quidem sed, velit
-                eius dolores eveniet hic minima, nihil voluptatibus. Magni veniam
-                eligendi libero sequi?
-            </p>
-
-            <div class="footer-icons">
-                <a href="https://www.facebook.com/profile.html?id=61554914385517" target="_blank"><i
-                        class="fab fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com/your_event_studio229?igsh=d3V5ZXdrMzNudWll" target="_blank"><i
-                        class="fab fa-instagram"></i></a>
-                <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
-                <a href="https://www.whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a>
-            </div>
-        </div>
+      </div>
     </footer>
 
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
-</body>
+    <script src="script.js"></script>
+    <script>
+      // Animation au scroll
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
 
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("active");
+          }
+        });
+      }, observerOptions);
+
+      document
+        .querySelectorAll(".reveal")
+        .forEach((el) => observer.observe(el));
+
+      // Validation formulaire
+      const form = document.querySelector(".form");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        // Animation de succès
+        const btn = form.querySelector(".btn-submit");
+        const originalText = btn.innerHTML;
+        btn.innerHTML = '<i class="fa fa-check"></i> Message envoyé !';
+        btn.style.background = "#28a745";
+
+        setTimeout(() => {
+          btn.innerHTML = originalText;
+          btn.style.background = "";
+          form.reset();
+        }, 3000);
+      });
+
+      // Effet 3D sur les cartes contact
+      if (window.innerWidth > 768) {
+        document.querySelectorAll(".contact-middle > div").forEach((card) => {
+          card.addEventListener("mousemove", (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+
+            const moveX = (x - centerX) / 15;
+            const moveY = (y - centerY) / 15;
+
+            card.style.transform = `translateY(-10px) perspective(1000px) rotateX(${-moveY}deg) rotateY(${moveX}deg)`;
+          });
+
+          card.addEventListener("mouseleave", () => {
+            card.style.transform =
+              "translateY(0) perspective(1000px) rotateX(0) rotateY(0)";
+          });
+        });
+      }
+    </script>
+  </body>
 </html>
